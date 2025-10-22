@@ -8,6 +8,7 @@ function App() {
     <>
       <Header />
       <h1 class="font-bold text-6xl">Our first React project</h1>
+      <h2>semester 5</h2>
       <Footer />
     </>
   )
