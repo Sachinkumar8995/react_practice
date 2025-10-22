@@ -3,15 +3,25 @@ import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
 
 function App() {
+  const display = () =>{
+    return "hello love you all"
+  }
+
+  const obj= {
+    car:"thar",
+    model:"2024",
+    comany:"mahindra",
+    city:"New York"
+  }
 
   return (
     <>
-      <Header />
-      <h1 class="font-bold text-6xl">Our first React project</h1>
-      <h2>semester 5</h2>
-      <Footer />
+      <h1>name : {obj.car} model : {obj.model}</h1>
+      <h1>{display()}</h1>
+
     </>
   )
 }
 
 export default App
+
