@@ -1,29 +1,20 @@
 import './App.css'
+import ChangeState from './components/ChangeState.jsx'
+// import ArrayProps from './components/ArrayProps.jsx'
+// import ContactCard from './components/ContactCard.jsx'
 // import Student from './components/Student.jsx'
 // import Card from './components/Card.jsx'
-import GreetingCard from './components/GreetingCard.jsx'
+// import GreetingCard from './components/GreetingCard.jsx'
 
 function App() {
-  const display = () =>{
-    return "hello love you all"
-  }
-
-  const obj= {
-    car:"thar",
-    model:"2024",
-    comany:"mahindra",
-    city:"New York"
-  }
-
-  const handleClick = (name) =>{
-    console.log(`${name} clicked the button`)
-  }
+  const hobbies = ['reading','coding','playing','travelling']
 
   return (
     <>
-      {/* <Card name='Sachin Kumar' email='sachinkumae239@lpu.in' city='Motuhari'/> */}
-      {/* <GreetingCard name='Sachin' message='How are yoe'/> */}
-      <button onClick={() => handleClick("Sachin")} className='bg-blue-500 text-white px-4 py-2 rounded-lg m-4 hover:bg-blue-700 transition-colors'>Click Me</button>
+      
+      {/* <ArrayProps name="Sachin Kumar" age={21} email="sachinkumar@gmail.com" hobbies={hobbies}/> */}
+      {/* <ContactCard name="Sachin Kumar" number="+1234567890" /> */}
+      <ChangeState />
     </>
   )
 }
